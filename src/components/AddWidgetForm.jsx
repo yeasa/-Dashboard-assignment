@@ -27,7 +27,7 @@ const AddWidgetForm = ({ onAdd, onCancel }) => {
           placeholder="Widget Text"
           value={text}
           onChange={(e) => setText(e.target.value)}
-          // required
+          required
         />
         <button type="submit">Add Widget</button>
         <button type="button" onClick={onCancel}>Cancel</button>

@@ -32,7 +32,6 @@ function App() {
     }
   };
   const onRefresh = () => {
-    // You can replace this with your actual refresh logic
     window.location.reload();
   };
   const handleSearch = (event) => {
@@ -103,9 +102,9 @@ function App() {
           {displayedWidgets.map(widget => (
             <div key={widget.id} className="widget-item">
               <h3>{widget.name}</h3>
-              <p>{widget.description}</p>  {/* Display widget description */}
-              <p><strong>Type:</strong> {widget.type}</p>  {/* Display widget type */}
-              {/* Add any other details you need to display */}
+              <p>{widget.description}</p>  
+              <p><strong>Type:</strong> {widget.type}</p> 
+              
             </div>
           ))}
         </div>
